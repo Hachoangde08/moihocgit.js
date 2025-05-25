@@ -44,7 +44,6 @@ function dientichhinhchunhat(a, b) {
     console.log("dien tich hình chữ nhật(ko return): " + (a * b))
 }
 function chuvihinhchunhat_return(a, b) {
-    console.log("dien tich hình chữ nhật(ko return): " + (a + b) * 2)
     return "chu vi hinh chu nhat la(co return): " + (a + b) * 2;
 }
 function dientichhinhchunhat_return(a, b) {
@@ -120,17 +119,14 @@ function delta_return(a, b, c) {
     }
 }
 
-function just(tramy) {
-    document.writeln(tramy + "<br>")
-}
 
 chuvihinhchunhat(5, 2)
-just(chuvihinhchunhat_return(2, 3))
+document.writeln(chuvihinhchunhat_return(2, 3) + "<br>");
 dientichhinhchunhat(3, 3)
-just(dientichhinhchunhat_return(5, 2) + "<br>")
+document.writeln(dientichhinhchunhat_return(5, 2) + "<br>")
 
 luythua(2, 6)
-just(luythua_return(2, 6) + "<br>")
+document.writeln(luythua_return(2, 6) + "<br>")
 
 delta(1, -3, 2)
-just(delta_return(1, -3, 2) + "<br>")
+document.writeln(delta_return(1, -3, 2))

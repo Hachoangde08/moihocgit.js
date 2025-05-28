@@ -34,33 +34,34 @@
 //--------------------------Homework-----------------------
 
 // lesson 1
-document.writeln("Bài 1:" + "<br>   ")
+document.writeln("Bài 1🍱:" + "<br>   ")
 function chuvihinhchunhat(a, b) {
-    document.writeln("chu vi hình chữ nhật(ko return): " + (a + b) * 2 + "<br>")
-    console.log("chu vi hình chữ nhật(ko return): " + (a + b) * 2)
+    document.writeln("chu vi hình chữ nhật(ko return) là: " + (a + b) * 2 + "<br>")
+    console.log("chu vi hình chữ nhật(ko return) là: " + (a + b) * 2)
 }
 function dientichhinhchunhat(a, b) {
-    document.writeln("dien tich hình chữ nhật(ko return): " + (a * b) + "<br>")
-    console.log("dien tich hình chữ nhật(ko return): " + (a * b))
+    document.writeln("dien tich hình chữ nhật(ko return) là : " + (a * b) + "<br>")
+    console.log("dien tich hình chữ nhật(ko return) là" + (a * b))
 }
 function chuvihinhchunhat_return(a, b) {
-    return "chu vi hinh chu nhat la(co return): " + (a + b) * 2;
+    console.log("dien tich hình chữ nhật(ko return) là: " + (a + b) * 2)
+    return "chu vi hinh chu nhat la(co return) là: " + (a + b) * 2;
 }
 function dientichhinhchunhat_return(a, b) {
-    console.log("dien tich hinh chu nhat la (co return): " + (a * b))
-    return "dien tich hinh chu nhat la (co return): " + (a * b);
+    console.log("dien tich hinh chu nhat la (co return) là: " + (a * b))
+    return "dien tich hinh chu nhat la (co return) là: " + (a * b);
 }
 
 //lesson 2
 function luythua(a, b) {
     document.writeln("<hr>");
-    document.writeln("Bài 2:" + "<br>")
-    document.writeln("pt can bậc 2 (No Return): " + Math.pow(a, b) + "<br>")
-    console.log("pt can bậc 2 (No Return): " + Math.pow(a, b))
+    document.writeln("Bài 2🥞:" + "<br>")
+    document.writeln("pt can bậc 2 (No Return) là: " + Math.pow(a, b) + "<br>")
+    console.log("pt can bậc 2 (No Return) là : " + Math.pow(a, b))
 }
 function luythua_return(a, b) {
-    console.log("pt can bac 2 (Have Return): " + Math.pow(a, b))
-    return "pt can bac 2 (Have Return): " + Math.pow(a, b)
+    console.log("pt can bac 2 (Have Return) là: " + Math.pow(a, b))
+    return "pt can bac 2 (Have Return) là: " + Math.pow(a, b)
 }
 
 // lesson 3
@@ -79,16 +80,16 @@ function delta(a, b, c) {
     let delta = b * b - 4 * a * c
     if (delta > 0) {
         document.writeln("<hr>");
-        document.writeln("Bài 3:" + "<br>")
+        document.writeln("Bài 3:🧀" + "<br>")
         const x1 = (-b - Math.sqrt(delta)) / (2 * a)
         const x2 = (-b + Math.sqrt(delta)) / (2 * a)
-        console.log("vay pt co nghiem phan biet(No Return) X1 = " + x1 + ",X2 = " + x2)
-        document.writeln("vay pt co nghiem phan biet(No Return) X1 = " + x1 + ",X2 = " + x2 + "<br>")
+        console.log("vay pt co nghiem phan biet(No Return) là X1 = " + x1 + ",X2 = " + x2)
+        document.writeln("vay pt co nghiem phan biet(No Return) là X1 = " + x1 + ",X2 = " + x2 + "<br>")
     }
     else if (delta === 0) {
         const x = -b / (2 * a)
-        console.log("Pt co nghiem kep la(No Return) X= " + x)
-        document.writeln("Pt co nghiem kep la(No Return) X= " + x + "<br>")
+        console.log("Pt co nghiem kep la(No Return) là X= " + x)
+        document.writeln("Pt co nghiem kep la(No Return) là X= " + x + "<br>")
     }
     else {
         console.log("Pt Vo Nghiem")
@@ -98,20 +99,20 @@ function delta(a, b, c) {
 
 function delta_return(a, b, c) {
     if (a === 0 && b === 0) {
-        return c !== 0 ? "pt vo nghiem" : "pt vo so nghiem"
+        return c == 0 ? "pt vo nghiem" : "pt vo so nghiem"
     }
 
     let delta = b * b - 4 * a * c
     if (delta > 0) {
         const x1 = (-b - Math.sqrt(delta)) / (2 * a)
         const x2 = (-b + Math.sqrt(delta)) / (2 * a)
-        console.log("vay pt co 2 nghiem (Return) x1= " + x1 + ",x2= " + x2)
-        return "vay pt co 2 nghiem (Return) x1= " + x1 + ",x2= " + x2
+        console.log("vay pt co 2 nghiem (Return) là x1= " + x1 + ",x2= " + x2)
+        return "vay pt co 2 nghiem (Return) là x1= " + x1 + ",x2= " + x2
     }
     else if (delta === 0) {
         const x = -b / (2 * a)
-        console.log("pt co 2 nghiem kep (Return)x1,x2 " + x)
-        return "pt co 2 nghiem kep (Return)x1,x2 " + x
+        console.log("pt co 2 nghiem kep (Return) x1,x2 là" + x)
+        return "pt co 2 nghiem kep (Return) x1,x2 là " + x
     }
     else {
         console.log("pt vo nghiem")
@@ -119,14 +120,17 @@ function delta_return(a, b, c) {
     }
 }
 
+function miss(tramy) {
+    document.writeln(tramy + "<br>")
+}
 
 chuvihinhchunhat(5, 2)
-document.writeln(chuvihinhchunhat_return(2, 3) + "<br>");
+miss(chuvihinhchunhat_return(2, 3))
 dientichhinhchunhat(3, 3)
-document.writeln(dientichhinhchunhat_return(5, 2) + "<br>")
+miss(dientichhinhchunhat_return(5, 2))
 
 luythua(2, 6)
-document.writeln(luythua_return(2, 6) + "<br>")
+miss(luythua_return(2, 6))
 
 delta(1, -3, 2)
-document.writeln(delta_return(1, -3, 2))
+miss(delta_return(1, -3, 2))

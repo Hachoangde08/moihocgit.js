@@ -35,7 +35,8 @@
 // let numb = num.toFixed(2);//làm tron số 2 
 // console.log(numb);
 
-//--------------------------HomeWork----------------------------
+//--------------------------HomeWork----------------------------//
+// ham in ra
 function tramy(em) {
     alert(em)
     document.writeln(em + "<br>")
@@ -85,7 +86,7 @@ document.writeln("<hr>");
 
 //lesson 6
 document.writeln("bài 6: 🥐")
-let input4 = prompt("bài 6: Vui Lòng Nhập bất kĩ chữ hoạc số nào: 🚌")
+let input4 = prompt("bài 6: Nhập để kiểm tra số bất kĩ chữ hoạc số nào: 🚌")
 let nonum = isNaN(input4)
 if (nonum === false) {
     tramy("Xử Lí Thành Công Rồi Nè 👻 Result:  Đây lá số")
@@ -114,7 +115,7 @@ document.writeln("<hr>");
 //lesson 8 
 document.writeln("Bài 8: 🥪<br>");
 const str3 = "Anh Yêu Em ay";
-if (str3.includes("a") || str3.includes("A")) {
+if (str3.includes("a")) {
     hoang("Kết quả là: " + "Chuỗi có chứa chữ 'a'")
 } else {
     hoang("Kết quả là: " + "Không có chữ 'a'");
